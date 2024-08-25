@@ -1,0 +1,410 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+#debug{
+    @apply hidden bottom-5 right-5 absolute opacity-10
+}
+.breakpointxs{ @apply sm:hidden md:hidden lg:hidden xl:hidden 2xl:hidden}
+.breakpointsm{ @apply sm:block md:hidden lg:hidden xl:hidden 2xl:hidden}
+.breakpointmd{ @apply sm:hidden md:block lg:hidden xl:hidden 2xl:hidden }
+.breakpointlg{ @apply sm:hidden md:hidden lg:block xl:hidden 2xl:hidden }
+.breakpointxl{ @apply sm:hidden md:hidden lg:hidden xl:block 2xl:hidden }
+.breakpoint2xl{ @apply sm:hidden md:hidden lg:hidden xl:hidden 2xl:block}
+
+
+/* Scroll bars */
+body {
+    --sb-track-color: #075985;
+    --sb-thumb-color: #afdcea;
+    --sb-size: 11px;
+  
+    scrollbar-color: var(--sb-thumb-color) 
+                     var(--sb-track-color);
+  }
+  
+  body::-webkit-scrollbar {
+    width: var(--sb-size) 
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 15px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 15px;
+    border: 1px solid #022d44;
+}
+
+
+
+
+html{
+    @apply scroll-smooth
+    /* bg-gradient-to-bl to-sky-800 from-sky-900  */
+}
+
+html{
+    background-color: #03273A;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg fill-opacity='0.22'%3E%3Cpath fill='%23032c41' d='M486 705.8c-109.3-21.8-223.4-32.2-335.3-19.4C99.5 692.1 49 703 0 719.8V800h843.8c-115.9-33.2-230.8-68.1-347.6-92.2C492.8 707.1 489.4 706.5 486 705.8z'/%3E%3Cpath fill='%23043148' d='M1600 0H0v719.8c49-16.8 99.5-27.8 150.7-33.5c111.9-12.7 226-2.4 335.3 19.4c3.4 0.7 6.8 1.4 10.2 2c116.8 24 231.7 59 347.6 92.2H1600V0z'/%3E%3Cpath fill='%23043550' d='M478.4 581c3.2 0.8 6.4 1.7 9.5 2.5c196.2 52.5 388.7 133.5 593.5 176.6c174.2 36.6 349.5 29.2 518.6-10.2V0H0v574.9c52.3-17.6 106.5-27.7 161.1-30.9C268.4 537.4 375.7 554.2 478.4 581z'/%3E%3Cpath fill='%23053a57' d='M0 0v429.4c55.6-18.4 113.5-27.3 171.4-27.7c102.8-0.8 203.2 22.7 299.3 54.5c3 1 5.9 2 8.9 3c183.6 62 365.7 146.1 562.4 192.1c186.7 43.7 376.3 34.4 557.9-12.6V0H0z'/%3E%3Cpath fill='%23053F5E' d='M181.8 259.4c98.2 6 191.9 35.2 281.3 72.1c2.8 1.1 5.5 2.3 8.3 3.4c171 71.6 342.7 158.5 531.3 207.7c198.8 51.8 403.4 40.8 597.3-14.8V0H0v283.2C59 263.6 120.6 255.7 181.8 259.4z'/%3E%3Cpath fill='%23054466' d='M1600 0H0v136.3c62.3-20.9 127.7-27.5 192.2-19.2c93.6 12.1 180.5 47.7 263.3 89.6c2.6 1.3 5.1 2.6 7.7 3.9c158.4 81.1 319.7 170.9 500.3 223.2c210.5 61 430.8 49 636.6-16.6V0z'/%3E%3Cpath fill='%2306496e' d='M454.9 86.3C600.7 177 751.6 269.3 924.1 325c208.6 67.4 431.3 60.8 637.9-5.3c12.8-4.1 25.4-8.4 38.1-12.9V0H288.1c56 21.3 108.7 50.6 159.7 82C450.2 83.4 452.5 84.9 454.9 86.3z'/%3E%3Cpath fill='%23064f75' d='M1600 0H498c118.1 85.8 243.5 164.5 386.8 216.2c191.8 69.2 400 74.7 595 21.1c40.8-11.2 81.1-25.2 120.3-41.7V0z'/%3E%3Cpath fill='%2307547d' d='M1397.5 154.8c47.2-10.6 93.6-25.3 138.6-43.8c21.7-8.9 43-18.8 63.9-29.5V0H643.4c62.9 41.7 129.7 78.2 202.1 107.4C1020.4 178.1 1214.2 196.1 1397.5 154.8z'/%3E%3Cpath fill='%23075985' d='M1315.3 72.4c75.3-12.6 148.9-37.1 216.8-72.4h-723C966.8 71 1144.7 101 1315.3 72.4z'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Alegreya', serif;
+}
+
+body{
+    @apply text-xl mx-auto p-5 text-sky-100 pt-5 
+    md:max-w-6xl md:pt-28
+}
+
+#scrollToTop span{
+    @apply sr-only
+}
+
+#scrollToTop{
+    @apply hidden md:block text-slate-50 font-extrabold fixed bottom-5 left-10 w-24 mx-auto transition hover:-translate-y-2 opacity-60 hover:opacity-100
+ }
+
+main {
+    @apply bg-transparent 
+}
+
+h1, h2, h3, h4, nav a, #specializing dt{
+    /* font-family: 'Calistoga', 'Times New Roman', Times, serif; */
+    font-family: 'Alegreya', sans-serif;
+}
+
+
+h1, h2, h3 {
+    text-shadow: 0px 5px 5px rgb(1, 22, 69);
+}
+
+h1{
+    @apply font-bold text-4xl col-span-4 -mt-4 hover:text-sky-200
+            md:text-6xl
+}
+
+h2,h3{
+    @apply font-bold text-5xl mt-6 mb-12
+}
+
+p + h3, hr + h3{
+    @apply mt-14
+}
+
+
+h4,h5{
+    @apply font-bold text-3xl mb-4 mt-12
+}
+
+hr{
+    @apply border-b-4 border-sky-700
+}
+
+header{
+    @apply mb-9 pb-6 pt-10 border-b-4 border-sky-700
+           md:grid md:grid-flow-col md:grid-cols-12 md:mb-8
+}
+
+/* Used on the about page */
+figure {
+    @apply w-1/2 float-right block ml-5 mb-5
+}
+figure img{
+    @apply rounded-md border-4 border-sky-700
+}
+figure figcaption{
+    @apply text-sm italic text-sky-300 text-right
+}
+figure figcaption a{
+    @apply underline hover:no-underline
+}
+
+
+
+/* nav ul{
+    @apply md:col-span-7 md:col-start-6 md:grid md:grid-flow-col
+} */
+
+
+
+/* Hide the checkbox, menu and close button by default */
+/* Hide the open button when the menu is open */
+#menustate,
+nav ul,
+nav .close, 
+#menustate:checked ~ nav .open {
+    @apply hidden
+}
+
+
+
+/*
+    Show the menu and close button when the menu is open
+    (when the #menustate input field is checked)
+*/
+#menustate:checked ~ nav :is(ul, .close) {
+    @apply block pt-32 bg-gradient-to-bl to-sky-900 from-sky-600 border-4 border-sky-700 
+    absolute top-0 left-0 w-full bg-sky-500 h-full z-10
+
+    md:bg-none md:h-auto md:z-auto
+}
+
+nav{
+    @apply md:col-span-8 -mt-3
+}
+
+nav label span{
+    @apply text-5xl absolute top-9 right-5
+}
+
+nav li label {
+    @apply block text-3xl text-center not-italic mt-28 md:hidden
+}
+
+nav ul{
+    @apply md:block md:text-right
+}
+
+/* Hide Home on medium sized screens */
+nav ul li:first-child{
+    @apply md:sr-only lg:not-sr-only
+}
+
+
+nav label {
+    @apply md:hidden
+}
+
+nav li{
+    @apply md:inline-block
+}
+
+nav a{
+    @apply block col-span-1 text-center rounded-md decoration-dashed underline-offset-4
+    md:py-2 md:px-4
+     hover:bg-sky-800 hover:transition-opacity hover:underline 
+}
+
+nav a.active{
+    @apply underline 
+}
+
+
+p {
+    @apply leading-8 pb-5
+}
+
+p a{
+    @apply underline hover:text-sky-200 hover:underline decoration-dashed underline-offset-4 hover:bg-sky-800 hover:transition-opacity
+}
+
+menu{
+    @apply fixed w-full bottom-0 left-0 right-0 py-4 px-3 grid grid-flow-col-dense gap-5 justify-center
+    bg-gradient-to-br to-sky-900 from-slate-900
+    md:right-10 md:top-10 md:w-8 md:left-auto md:bottom-auto md:bg-none md:block
+}
+
+menu li{
+    @apply md:mb-6 w-8 h-8
+}
+
+menu svg{
+    fill:#fff;
+    opacity: 0.5;
+}
+
+menu svg:hover{
+    @apply opacity-75
+}
+
+menu span{
+    @apply hidden
+}
+
+#intro{
+    @apply pb-7
+}
+
+#intro mark{
+    @apply bg-transparent
+}
+
+#intro p:first-of-type{
+    @apply text-3xl
+}
+/*
+#intro p{
+    @apply mb-6 text-xl
+} */
+
+#intro img{
+    @apply  rounded-full border-sky-200 border-8 w-40 h-40 mx-auto mb-5
+            
+            md:float-right md:ml-8 md:w-56 md:h-56
+}
+
+#intro time a{
+    @apply no-underline
+}
+
+#intro time a span{
+    @apply underline
+}
+
+
+#homepage h2{
+    @apply pt-9
+}
+
+#homepage aside{
+    @apply pb-4 md:grid grid-flow-col grid-cols-3 gap-10
+    /* @apply pt-8 md:grid grid-flow-col grid-cols-3 gap-10 */
+}
+
+#homepage dl{
+    @apply col-span-1 text-center mb-12
+}
+
+#homepage dt{
+    @apply font-semibold text-center mb-3 text-lg
+}
+
+#homepage dd{
+    @apply inline-block px-3 py-1 m-1 bg-sky-700 content-center rounded-lg
+}
+
+#singlecolumn main{
+    @apply mx-auto 
+    md:w-2/3 md:mt-10 md:mb-20
+}
+
+.timeline{
+    @apply mb-10
+}
+
+.timeline h4{
+    @apply mt-0
+}
+
+#cred {
+    @apply grid grid-flow-row grid-cols-3 gap-5 mx-auto mb-14
+}
+
+#cred iframe{
+    @apply bg-white rounded-lg
+}
+
+#iterations div{
+    @apply w-3/4 mx-auto mb-20 odd:rotate-3 even:-rotate-3 even:text-right odd:text-left
+}
+#iterations em{
+    @apply text-sky-300 not-italic block p-2 text-sm
+}
+#iterations img{
+    @apply rounded-xl border-white border-4  
+}
+
+
+.articleLinks li {
+    @apply my-12 leading-10
+}
+
+.articleLinks time{
+    @apply font-mono text-sky-200 block text-sm leading-5
+}
+
+.articleLinks a{
+    @apply text-sky-50 block underline-offset-4 underline hover:decoration-wavy hover:text-sky-200
+}
+
+
+footer{
+    @apply mb-40 pt-9 px-5 text-yellow-100
+}
+
+
+footer img{
+    @apply rounded-full border-sky-200 border-4 mx-auto mb-5 w-28 h-auto           
+    md:float-left md:mr-8 md:mt-1
+}
+
+
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#workList li{
+    @apply py-10 border-b-4 border-sky-700
+}
+
+
+#workGrid ul {
+    @apply grid grid-cols-4 gap-12
+}
+
+#workGrid li {
+    @apply hover:no-underline underline transition 
+}
+
+#workGrid li a strong {
+    @apply text-center block
+}
+
+#workGrid li a img {
+    @apply rounded-t-lg
+}
+
+#singlecolumn main{
+    @apply mx-auto w-2/3 mt-10 mb-20
+}
+
+#singlecolumn h3{
+    @apply text-3xl mb-3 mt-8
+}
+
+#singlecolumn p{
+    @apply mb-5 leading-7
+}
+
+#singlecolumn sup{
+    @apply text-lg mb-10 block
+}
+
+#singlecolumn figure {
+    @apply float-right block ml-5 mb-5
+}
+
+#singlecolumn figure img{
+    @apply  rounded-full border-sky-200 border-8 w-56
+}
+
+#singlecolumn figure figcaption{
+    @apply italic block text-center text-sm mt-2
+}
+
+
+
+
+
+
+
+
+
+
+ */

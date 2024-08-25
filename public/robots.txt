@@ -1,0 +1,4 @@
+Sitemap: https://patrickdoran.com/sitemap.xml
+
+User-agent: *
+Disallow:
