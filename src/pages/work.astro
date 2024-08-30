@@ -1,0 +1,40 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+
+// Load projects from JSON file
+import works from '../data/patrickworks.json'
+// const { skillsFrontEnd, skillsUX, skillsM365 } = skills;
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body id="singlecolumn">
+		<Header />
+		
+		<main>
+			<h2>Work and Projects by Patrick Doran</h2>
+	
+
+			<ul id="workList">  
+				{works.map(work => (
+				<li><h4>{ work.Title }</h4> 
+						<img loading="lazy" alt={ work.Title }" src={ work.Image } />
+						<p>Role: <em>{ work.Role }</em></p>
+						<p>{ work.Description }</p>
+						<p><a href={ work.Repo } title="View this code">Repo</a> | <a href={ work.Link}>Link</a></p>
+					</li>
+				))}
+			</ul>
+  
+
+		</main>
+		<Footer />
+	</body>
+</html>

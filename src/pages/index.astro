@@ -3,48 +3,70 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+
+// Load skills from JSON file
+import skills from '../data/site.json'
+const { skillsFrontEnd, skillsUX, skillsM365 } = skills;
+
+// Import the <Image /> component
+import { Image } from "astro:assets"
+// Import a reference to the image itself
+import myFace from "../assets/patrick_doran_header_photo.jpg"
 ---
+
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body>
+	<body id="homepage">
 		<Header />
+		
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!!!</h1>
 			
-			<p class="text-3xl font-bold underline">
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+			<div id="intro">
+ 
+
+				<Image src={myFace} alt="Photo of Patrick Doran. He's a web developer and designer. In this photo he is wearing glasses and smiling. Photo credit to my selfie-length arm." />
+
+				<p>
+				  <span role="img" aria-label="the Vulcan hello">🖖</span> Hello, I'm <strong>Patrick Doran</strong>, a user experience designer <span>&amp;</span> developer from North Carolina.</p>
+				
+				<p>Since <time datetime='1998-01'><a target='_blank' href='assets/patrick_doran_work_history.jpg' title="Pepridge Farms remembers"><span>1998</span>&nbsp;<mark>&#x1F4BE;</mark></a></time> I've designed and coded fast user interfaces, modern JavaScript applications, and obsessed about usability and performance. Today I'm focused on building with <em>Vue</em>, <em>React</em>, and <em>Tailwind</em> for the Microsoft 365/SharePoint platform.</p>
+			  
+				<p>When I'm not busy <a href="/work">building interactive things</a>, I enjoy <a href="/writing">writing</a> and <a href="/speaking">talking shop</a>.</p>
+				
+				<p>Link in <a href="/about" title="Learn more about Patrick">bio</a>.</p>
+			  
+			  </div>
+			  
+			  <hr/>
+			  
+			  
+			  <h2>Expertise in</h2>
+				<aside>
+				  <dl>
+				  <dt>&#x1F6E0;&#xFE0F; Front-End Web Development  &#x1F6E0;&#xFE0F;</dt>
+				  {skillsFrontEnd.map(skill => (
+					<dd>{skill}</dd>
+					))}
+				  </dl>
+				  <dl>
+					<dt>&#x1F5A5;&#xFE0F; User Experience &amp; Design  &#x1F5A5;&#xFE0F;</dt>
+					{skillsUX.map(skill => (
+						<dd>{skill}</dd>
+					))}
+				  </dl>
+				  <dl>
+					<dt>&#x1F39B;&#xFE0F; Microsoft 365 &amp; SharePoint  &#x1F39B;&#xFE0F;</dt>
+					{skillsM365.map(skill => (
+						<dd>{skill}</dd>
+					))}
+				  </dl>
+				</aside>
+
+			
 		</main>
 		<Footer />
 	</body>

@@ -1,0 +1,5 @@
+{
+    "skillsFrontEnd":["HTML","CSS","JavaScript","Vue","Astro","Tailwind","React","Node & Express","PHP","XML","JSON","Python","Svelte","SASS","Git","WordPress","Eleventy","Gulp"],
+    "skillsUX":["Prototyping","Responsive design","Tableau","Accessibility","WAI-ARIA","PhotoShop","Illustrator","Figma","Mockups","XD"],
+    "skillsM365":["SharePoint","Power Automate","Power Apps","#SPFX","Azure","Power BI","Logic Apps","Teams","Nintex Workflow","JSON View Formatting","Lists"]
+}

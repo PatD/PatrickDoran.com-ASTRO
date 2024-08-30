@@ -2,12 +2,19 @@
 import Social from './Social.astro';
 import BackTop from './BackTop.astro';
 const today = new Date();
+
+// Import the <Image /> component
+import { Image } from "astro:assets"
+// Import a reference to the image itself
+import myFooterFace from "../assets/patrick_doran_web_developer_hat.jpg"
+
 ---
 <hr/>
 <footer>
 	<Social></Social>
 	<BackTop></BackTop>
-	<img src="/assets/patrick_doran_web_developer_hat.jpg" loading="lazy" alt="Photograph of Patrick Doran wearing a hat" />
+	<Image src={myFooterFace} alt="Photograph of Patrick Doran wearing a hat" />
+
 	<p>&copy; {today.getFullYear()} <em>Rolling trackballs just outside Raleigh, North Carolina.</em> This is at least the 10th iteration of PatrickDoran.com, a site that's been online since 2004. <a href="/privacy">Privacy</a> is important.</p>
 	<p>The pages are static as heck and generated quickly with <a href="https://astro.build/" target="_blank">Astro</a>, and you can see that on <a href="https://github.com/PatD/PatrickDoran.com-ASTRO" target="_blank">GitHub</a>. Styled using <a href="https://tailwindcss.com/" target="_blank" rel="nofollow">Tailwind</a>, <a href="https://scrollbar.app/" target="_blank" rel="nofollow">Scrollbar.app</a>, &amp; <a href="https://www.svgbackgrounds.com" target="_blank" rel="nofollow">SVGBackgrounds.com</a>.</p>
 </footer>
