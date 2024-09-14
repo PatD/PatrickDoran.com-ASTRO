@@ -1,0 +1,62 @@
+[
+    {
+        "link": "https://www.youtube.com/watch?v=eMvY60yVHig",
+        "date": "2024-05-15T15:12:00",
+        "postId": 34,
+        "title": "A live demonstration of using Microsoft Power Automate with Excel Online.",
+        "content": "All Things M365 Conference",
+        "external": "_blank"
+    },
+    
+
+    {
+        "link": "https://www.youtube.com/watch?v=9oDR8MiAlY0",
+        "date": "2023-05-17T15:12:00",
+        "postId": 32,
+        "title": "A live demonstration of using Microsoft Power Automate for business functions.",
+        "content": "All Things M365 Conference",
+        "external": "_blank"
+    },
+
+    {
+        "link": "https://www.youtube.com/watch?v=5qRrwi0SmH8",
+        "date": "2022-06-01T15:12:00",
+        "postId": 30,
+        "title": "Podcast guest on The Geek Within with Jeremy Wood",
+        "content": "The Geek Within Podcast",
+        "external": "_blank"
+    },
+
+    {
+        "link": "https://www.youtube.com/watch?v=SwfyUk84ays",
+        "date": "2022-02-10T15:12:00",
+        "postId": 28,
+        "title": "Automate Your Daily Processes with Power Automate",
+        "content": "All Things M365 Conference",
+        "external": "_blank"
+    },
+    {
+        "link": "https://techcommunity.microsoft.com/t5/public-sector-blog/m365govcommunitycall-february-2022-power-platform-for-government/ba-p/3146566",
+        "date": "2022-02-10T15:12:00",
+        "postId": 26,
+        "title": "Featured Speaker - Power Platform in Gov Cloud",
+        "content": "Microsoft #M365GovCommunity Call",
+        "external": "_blank"
+    },
+    {
+        "link": "https://docs.google.com/presentation/d/1NW3BZtvG2jSI3thMt8de24i29yw8xOlkj71nJHxsNDo/",
+        "date": "2017-11-14T13:26:36",
+        "postId": 24,
+        "title": "Shouting at SharePoint",
+        "content": "SharePoint Engage Conference",
+        "external": "_blank"
+    },
+    {
+        "link": "https://www.slideshare.net/patrickdoran/the-humble-mighty-sharepoint-url-query-string",
+        "date": "2016-11-14T13:25:08",
+        "postId": 22,
+        "title": "The Humble, Mighty Query String",
+        "content": "SharePoint Engage Conference",
+        "external": "_blank"
+    }
+]

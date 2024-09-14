@@ -1,0 +1,27 @@
+---
+
+interface Props {
+    title: string;
+    img: string;
+    description: string;
+    repo: string;
+    role:string;
+    link:string;
+}
+
+const { title, img, role, description, repo, link } = Astro.props;
+
+let imageWithPath = "/assets/" + Astro.props.img
+
+
+---
+
+<li>
+    <h4>{title}</h4>
+    <img loading="lazy" alt={title} src={imageWithPath} />
+    <p>Role: <em>{role}</em></p>
+    <p>{description}</p>
+    <p>
+        <a href={repo} title="View this code">Repo</a> | <a href={link}>Link</a>
+    </p>
+</li> 

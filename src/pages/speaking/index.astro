@@ -1,0 +1,47 @@
+---
+import Layout from "../../layouts/RegularPage.astro";
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+
+
+// Load speaking from JSON file
+import speakings from '../../data/patrickspeaking.json'
+
+// An individual article component
+import ArticleLink from '../../components/ArticleLink.astro';
+
+// Import the <Image /> component
+import { Image } from "astro:assets"
+// Import a reference to the image itself
+import myFace from "../../assets/patrickdoran-speaking-shouting.jpg"
+---
+
+
+<Layout
+	title="Speaking and presentations from Patrick Doran."
+	description="Lorem ipsum dolor sit amet"
+	pubDate={new Date("September 07 2024")}
+	widthType="singlecolumn"
+>
+
+
+	
+			<ul class="articleLinks">  
+				{speakings.map(article => (
+					<ArticleLink 
+						link={article.link}
+						articleDate={article.date}
+						title={article.title}
+						content={article.content}
+						linkType={article.external}
+					/>
+					))} 
+			</ul>
+
+			<Image 
+				src={myFace} 
+				alt="Photograph of Patrick Doran's slides being presented at the SharePoint Engage Conference in Raleigh" />
+
+</Layout>

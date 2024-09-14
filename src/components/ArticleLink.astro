@@ -1,0 +1,24 @@
+---
+
+interface Props {
+    title: string;
+    link: string;
+    articleDate: string;
+    content: string;
+    linkType: string;
+}
+
+const { title, link, articleDate, content, linkType } = Astro.props;
+
+import FormattedDate from './FormattedDate.astro';
+const d = new Date(articleDate);
+
+---
+
+<li>
+    <time datetime={articleDate}>
+        <FormattedDate date={d}></FormattedDate>
+    </time> 
+    <a href={link} target={linkType}>{title}</a>
+    <p>{content}</p>
+</li> 

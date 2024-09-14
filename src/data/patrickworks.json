@@ -4,7 +4,7 @@
     "Title": "React Adventure Game Engine",
     "Repo": "https://github.com/PatD/react-adventure-game-engine",
     "Link": "https://react-adventure-game-engine.netlify.app",
-    "Image": "public/assets/patrickdoran_work_react_game_engine.png",
+    "Image": "patrickdoran_work_react_game_engine.png",
     "Role": "Front-End Developer",
     "Description": "An adventure game engine in the 1980's pixelstyle, built on React.js via Create React App. Playable in its current form with an included sample game. "
   },
@@ -13,7 +13,7 @@
     "Title": "NCDOT Citizen Action Reporting",
     "Repo": "https://github.com/PatD",
     "Link": "https://www.ncdot.gov/about-us/our-mission/Performance/Pages/citizen-action-request-report.aspx",
-    "Image": "public/assets/patrickdoran_work_CARS_vue3.png",
+    "Image": "patrickdoran_work_CARS_vue3.png",
     "Role": "Front-End Developer",
     "Description": "Dynamic citizen reporting and filtering application, built with Vue 3.1 and Vite, hosted in SharePoint."
   },
@@ -22,7 +22,7 @@
     "Title": "NCDOT CPL Letting List",
     "Repo": "https://github.com/PatD",
     "Link": "https://connect.ncdot.gov/letting/let-list/",
-    "Image": "public/assets/patrickdoran_work_connect_cpl.png",
+    "Image": "patrickdoran_work_connect_cpl.png",
     "Role": "Front-End Developer",
     "Description": "Using Vue, Vuex, Tabulator JS, SharePoint, local storage, and ArcGIS ESRI maps to inform statkeholders about thousands of future projects."
   },
@@ -31,7 +31,7 @@
     "Title": "NCDMV Office Locations Map",
     "Repo": "https://github.com/PatD",
     "Link": "https://www.ncdot.gov/dmv/offices-services/locate-dmv-office/",
-    "Image": "public/assets/patrick_doran_web_dmvlocations.PNG",
+    "Image": "patrick_doran_web_dmvlocations.PNG",
     "Role": "Front-End Developer",
     "Description": "Millions of licensed drivers across the state of North Carolina, and most will need to travel to a physical office for an ID. Hundreds of offices, but no easy way to know what was near you. This effort loads offices on a map from REST services, with relevant data, driving directions, and hours of operation. Utilizes Vue.js, Vuex, Leaflet.js, Bing Maps, REST services, geolocation, all on a public-facing SharePoint site."
   },
@@ -40,7 +40,7 @@
     "Title": "NCDOT Letting Rollup",
     "Repo": "https://github.com/PatD",
     "Link": "https://connect.ncdot.gov/letting/Pages/letting-roll-up.aspx",
-    "Image": "public/assets/patrick_doran_web_lettingrollup.PNG",
+    "Image": "patrick_doran_web_lettingrollup.PNG",
     "Role": "Front-End Developer",
     "Description": "Developed to help construction companies stay up to date on the latest project lettings. Utilizes JavaScript, local storage, and open source libraries like Tabulator, Moment.js, and Office Fabric UI on a public-facing SharePoint site."
   },
@@ -49,7 +49,7 @@
     "Title": "NCDMV REAL ID Wizard",
     "Repo": "https://github.com/PatD",
     "Link": "https://www.ncdot.gov/dmv/real-id-wizard",
-    "Image": "public/assets/patrick_doran_web_realidwizard.PNG",
+    "Image": "patrick_doran_web_realidwizard.PNG",
     "Role": "Developer, Designer",
     "Description": "Built to help citizens navigate the requirements of getting a REAL ID driver license. Utilizes Vue.js and Vue-CLI on a public-facing SharePoint site."
   },
@@ -58,7 +58,7 @@
     "Title": "United GIFs of America",
     "Repo": "https://github.com/PatD/United-GIFs-of-America",
     "Link": "https://gifsamerica.netlify.app",
-    "Image": "public/assets/patrick_doran_web_gifsunited.PNG",
+    "Image": "patrick_doran_web_gifsunited.PNG",
     "Role": "Developer, Designer",
     "Description": "Combined the Giphy API, vanilla JavaScript, offline storage, and SVG maps to allow the citizen to easily identify and save their state&apos;s offical GIF."
   },
@@ -67,7 +67,7 @@
     "Title": "Complete I-540 Project Map",
     "Repo": "https://github.com/PatD",
     "Link": "https://www.ncdot.gov/projects/complete-540/Pages/planned-construction-activities.aspx",
-    "Image": "public/assets/patrick_doran_web_complete540.PNG",
+    "Image": "patrick_doran_web_complete540.PNG",
     "Role": "Developer, Designer",
     "Description": "Built to inform and engage Raleigh area citizens about a large, multi-decade construction project. Utilizes Leaflet.js, Bing Maps, SharePoint Lists and GeoJSON data on a public-facing SharePoint site."
   }

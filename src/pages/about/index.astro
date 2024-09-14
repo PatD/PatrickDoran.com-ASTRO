@@ -1,0 +1,121 @@
+---
+import Layout from "../../layouts/RegularPage.astro";
+
+// Import the <Image /> component
+import { Image } from "astro:assets";
+// Import a reference to the image itself
+import myFace from "../../assets/patrick-doran-looking-too-serious.jpg";
+
+import meStanding from "../../assets/patrick_doran_on_the_beach_smaller.jpg";
+import pd2022 from "../../assets/patrickdoran_2022.png";
+import pd2016 from "../../assets/patrickdoran_2016.png";
+import pd2014 from "../../assets/patrickdoran_2014.png";
+import pd2007 from "../../assets/patrickdoran_2007.png";
+import pd1998 from "../../assets/patrickdoran_1998.png";
+
+---
+
+<Layout
+	title="A little about Patrick Doran, a front-end developer and designer."
+	description="Lorem ipsum dolor sit amet"
+	pubDate={new Date("September 07 2024")}
+	widthType="singlecolumn"
+>
+	<figure>
+		<a href="/assets/patrick-doran-looking-too-serious.jpg" target="_blank">
+			<Image
+				src={myFace}
+				alt="photo of Patrick Doran where he's looking a little bored, if I'm behing honnest"
+			/>
+		</a><figcaption>
+			Very serious photo credit: <a
+				href="https://mrjonathanphillips.wixsite.com/portfolio/work"
+				target="_blank">Jonathan Phillips</a
+			>
+		</figcaption>
+	</figure>
+
+	<p>
+		I've been building well-designed online and interactive experiences
+		since 1998, and in that time I've seen a lot of things comes and go
+		(Flash, Director, Freehand, MooTools, jQuery), but the important things
+		always stick around.
+	</p>
+
+	<p>
+		Important things like usability, performance, accessibility, and good
+		design. I'm a firm believer in these principles, and while the
+		technology stack changes with the seasons, the fundamentals are always
+		there and have guided me in what I build.
+	</p><p>
+		Professionally, I split my time between managing almost a dozen
+		developers and designers, while at the same time continuing to ship for
+		both the web and Microsoft 365 platforms.
+	</p>
+	<hr />
+	<h3>About this site</h3><figure>
+		<a href="/assets/patrick_doran_on_the_beach.jpg" target="_blank"
+			><Image
+				alt="photo of Patrick Doran living in the moment  on the beach, not thinking about the intenet at all"
+				src={meStanding}
+			/></a
+		><figcaption>Photo credit Kate Doran</figcaption>
+	</figure><p>
+		PatrickDoran.com has been live on the internet since 2002! That's <em
+			>forever</em
+		>
+		in internet-years. PatrickDoran.com is usually in handcrafted HTML, but was
+		for a short time built <em>unironically</em> with Flash. This particular
+		iteration went live in 2024.
+	</p><p>
+		The CSS styles and layout are built on top of <a
+			href="https://Tailwindcss.com"
+			target="_blank"
+			rel="noreferrer">Tailwind.css</a
+		> a very developer-friendly framework that looks great and loads fast. Go
+		ahead and <a
+			href="https://pagespeed.web.dev/report?url=https://patrickdoran.com/"
+			target="_blank">run PageSpeed Insights</a
+		> on it. I'll wait.
+	</p><p>
+		This markup is a mix of Markdown and <a
+			href="https://mozilla.github.io/nunjucks/"
+			target="_blank"
+			rel="noreferrer">Nunjucks</a
+		>, which render out plain old HTML with Astro. No databases were built
+		or harmed in the making of this website, and you can view it's guts on
+		Github.
+	</p><div id="iterations">
+		<h3>Previous iterations</h3><div>
+			<Image
+				alt="Screenshot of my portfolio from 2022"
+				src={pd2022}
+			/>
+			<em>The goth years (2022)</em>
+		</div><div>
+			<Image
+				alt="Screenshot of my portfolio from 2016"
+				src={pd2016}
+			/>
+			<em>Angular everywhere (2016)</em>
+		</div><div>
+			<Image
+				alt="Screenshot of my portfolio from 2014"
+				src={pd2014}
+			/>
+			<em>Wood paneling and too many tags (2014)</em>
+		</div><div>
+			<Image
+				alt="Screenshot of my portfolio from 2007"
+				src={pd2007}
+			/>
+			<em>Background repeat (2007)</em>
+		</div><div>
+			<Image
+				alt="My first site from 1998 on tripod"
+				src={pd1998}
+			/>
+			<em>I'm OG Tripod, y'all (1998)</em>
+		</div>
+	</div>
+</Layout>

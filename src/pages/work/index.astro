@@ -1,0 +1,37 @@
+---
+import Layout from "../../layouts/RegularPage.astro";
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
+
+// Load projects from JSON file
+import works from "../../data/patrickworks.json";
+
+// Individually sends each project to a component for formatting
+import WorkProject from "../../components/WorkProject.astro";
+---
+
+
+<Layout
+	title="Work and Projects by Patrick Doran"
+	description="Lorem ipsum dolor sit amet"
+	pubDate={new Date("September 07 2024")}
+	widthType="singlecolumn"
+>
+
+			<ul id="workList">
+				{
+					works.map((work) => (
+						<WorkProject
+							title={work.Title}
+							img={work.Image}
+							role={work.Role}
+							description={work.Description}
+							repo="myRepo"
+							link="myLink"
+						/>
+					))
+				}
+			</ul>
+</Layout>
