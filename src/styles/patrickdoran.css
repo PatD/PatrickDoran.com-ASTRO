@@ -554,18 +554,6 @@ video {
   --tw-contain-style:  ;
 }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
-
 .visible {
   visibility: visible;
 }
@@ -574,12 +562,16 @@ video {
   position: static;
 }
 
-.block {
-  display: block;
+.absolute {
+  position: absolute;
 }
 
-.flex {
-  display: flex;
+.relative {
+  position: relative;
+}
+
+.block {
+  display: block;
 }
 
 .hidden {
@@ -594,25 +586,8 @@ video {
   resize: both;
 }
 
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.font-bold {
-  font-weight: 700;
-}
-
 .italic {
   font-style: italic;
-}
-
-.underline {
-  text-decoration-line: underline;
 }
 
 .blur {
