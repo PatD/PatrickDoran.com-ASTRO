@@ -1,36 +1,46 @@
 ---
 import Layout from "../../layouts/RegularPage.astro";
-import FormattedDate from "../../components/FormattedDate.astro";
+// import FormattedDate from "../../components/FormattedDate.astro";
 import { getCollection } from 'astro:content';
+
+// An individual article component
+import ArticleLink from '../../components/ArticleLink.astro';
+
 
 const posts = (await getCollection('blog')).sort(
 (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 ---
 
-
 <Layout
 	title="Recent posts"
 	description="Writing and blog post entries from Patrick Doran"
 	pubDate={new Date("October 10 2024")}
-	widthType=""
+	widthType="singlecolumn"
 >
 
-<ul>
+<ul class="articleLinks">
 	{
 		posts.map((post) => (
-			<li>
-				<a href={`/writing/${post.slug}/`}>
-					{/* <img width={720} height={360} src={post.data.heroImage} alt="" /> */}
-					<h4 class="title">{post.data.title}</h4>
-					{post}
-					<p class="date">
-						<FormattedDate date={post.data.pubDate} />
-					</p>
-				</a>
-			</li>
+		<ArticleLink 
+			link={`/writing/${post.slug}/`}
+			articleDate={`${post.data.pubDate}`}
+			title={post.data.title}
+			content={post.data.description}}
+			linkType="_self"
+		/>
+
+			// <li>
+			// 	<a href={`/writing/${post.slug}/`}>
+			// 		{/* <img width={720} height={360} src={post.data.heroImage} alt="" /> */}
+			// 		<h4 class="title">{post.data.title}</h4>
+			// 		{post}
+			// 		<p class="date">
+			// 			<FormattedDate date={post.data.pubDate} />
+			// 		</p>
+			// 	</a>
+			// </li>
 		))
 	}
 </ul>
-	
 </Layout>

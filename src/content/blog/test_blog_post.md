@@ -1,6 +1,6 @@
 ---
 title: 'A test blog post!'
-description: 'A test blog post'
+description: 'A test blog post that is for testing'
 pubDate: 'Oct 10 2024'
 # heroImage: '/blog-placeholder-2.jpg'
 ---
