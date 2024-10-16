@@ -151,47 +151,75 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
-"first-post.md": {
-	id: "first-post.md";
-  slug: "first-post";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
 "markdown-style-guide.md": {
 	id: "markdown-style-guide.md";
   slug: "markdown-style-guide";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
+} & { render(): Render[".md"] };
+"microsoft-learn-article-Permissions-in-Group-Based-SharePoint-Sites.md": {
+	id: "microsoft-learn-article-Permissions-in-Group-Based-SharePoint-Sites.md";
+  slug: "microsoft-learn-article-permissions-in-group-based-sharepoint-sites";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"microsoft-learn-article-creating-useful-views-in-SharePoint.md": {
+	id: "microsoft-learn-article-creating-useful-views-in-SharePoint.md";
+  slug: "microsoft-learn-article-creating-useful-views-in-sharepoint";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"microsoft-learn-article-document-sets-in-SharePoint.md": {
+	id: "microsoft-learn-article-document-sets-in-SharePoint.md";
+  slug: "microsoft-learn-article-document-sets-in-sharepoint";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"microsoft-learn-article-large-lists-libraries-sharepoint.md": {
+	id: "microsoft-learn-article-large-lists-libraries-sharepoint.md";
+  slug: "microsoft-learn-article-large-lists-libraries-sharepoint";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"microsoft-learn-article-versioning-in-sharepoint.md": {
+	id: "microsoft-learn-article-versioning-in-sharepoint.md";
+  slug: "microsoft-learn-article-versioning-in-sharepoint";
+  body: string;
+  collection: "blog";
+  data: any
 } & { render(): Render[".md"] };
 "second-post.md": {
 	id: "second-post.md";
   slug: "second-post";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "test_blog_post.md": {
 	id: "test_blog_post.md";
   slug: "test_blog_post";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "third-post.md": {
 	id: "third-post.md";
   slug: "third-post";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "using-mdx.mdx": {
 	id: "using-mdx.mdx";
   slug: "using-mdx";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".mdx"] };
 };
 
@@ -203,5 +231,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = typeof import("../../src/content/config.js");
+	export type ContentConfig = never;
 }

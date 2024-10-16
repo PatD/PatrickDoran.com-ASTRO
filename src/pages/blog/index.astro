@@ -23,23 +23,15 @@ const posts = (await getCollection('blog')).sort(
 	{
 		posts.map((post) => (
 		<ArticleLink 
-			link={`/writing/${post.slug}/`}
+			link={`/blog/${post.slug}/`}
 			articleDate={`${post.data.pubDate}`}
 			title={post.data.title}
 			content={post.data.description}}
 			linkType="_self"
 		/>
 
-			// <li>
-			// 	<a href={`/writing/${post.slug}/`}>
 			// 		{/* <img width={720} height={360} src={post.data.heroImage} alt="" /> */}
-			// 		<h4 class="title">{post.data.title}</h4>
-			// 		{post}
-			// 		<p class="date">
-			// 			<FormattedDate date={post.data.pubDate} />
-			// 		</p>
-			// 	</a>
-			// </li>
+
 		))
 	}
 </ul>
