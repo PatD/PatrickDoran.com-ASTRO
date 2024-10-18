@@ -1,7 +1,7 @@
 ---
-title: 'Third post'
-description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 22 2022'
+title: 'Migrating this website from Eleventy to Astro'
+description: 'The process involved in moving this website from Eleventy to Astro'
+pubDate: 'October 18 2024'
 heroImage: '/blog-placeholder-2.jpg'
 ---
 
