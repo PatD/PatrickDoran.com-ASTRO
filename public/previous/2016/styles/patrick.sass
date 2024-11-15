@@ -1,0 +1,526 @@
+/* Patrickdoran.com CSS, compiled from SASS file patrick.scss.*/
+
+// Path to fonts in project
+    $fontpath : "../fonts" ;
+
+// Site color pallet
+    $yellow : #f1c40f ;
+    $blueish: #2980B9;
+    $darkBlue : #3d566e ;
+    $orange: #d35400 ;
+    $tealish: #1abc9c ;
+    $greenish: #7f8c8d;
+
+
+// Mixin for header. 
+// This is the default state transisitoning to compressed
+    @mixin headerTransformStart {
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+
+
+
+
+
+
+
+/* Fonts up front */  
+
+/* Wrap this in a media query, don't load on mobile */
+
+
+@font-face {
+    font-family: 'porter_sans_blockblock';
+    src: url('#{$fontpath}/porter-sans-inline-block-webfont.eot');
+    src: url('#{$fontpath}/porter-sans-inline-block-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$fontpath}/porter-sans-inline-block-webfont.woff') format('woff'),
+         url('#{$fontpath}/porter-sans-inline-block-webfont.ttf') format('truetype'),
+         url('#{$fontpath}/porter-sans-inline-block-webfont.svg#porter_sans_blockblock') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'amblelight_condensed';
+    src: url('#{$fontpath}/Amble-LightCondensed-webfont.eot');
+    src: url('#{$fontpath}/Amble-LightCondensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$fontpath}/Amble-LightCondensed-webfont.woff') format('woff'),
+         url('#{$fontpath}/Amble-LightCondensed-webfont.ttf') format('truetype'),
+         url('#{$fontpath}/Amble-LightCondensed-webfont.svg#amblelight_condensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/* Html5 boilerplate, too */
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%; 
+  -webkit-text-size-adjust: 100%;
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+
+body {
+  margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+
+a { background-color: transparent;}
+
+a:active,
+a:hover { outline: 0;}
+
+
+b,
+strong {
+  font-weight: bold;
+}
+
+
+img {
+  border: 0;
+}
+
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+h1, 
+h2, 
+nav a {font-family:'porter_sans_blockblock';}
+
+
+body{
+    font-family:'amblelight_condensed';
+    padding:1em 0em;
+    margin:0;
+    box-shadow: inset 0 0 0 1em $yellow;
+    min-height:1000px;}
+
+
+
+
+
+
+/* This is the Header's natural state */
+header {  
+    text-rendering: optimizeLegibility;
+    width: 100%;
+    text-align:center;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    color:$darkBlue;
+    transform: translateZ(0);
+    transform: translate3d(0, 0, 0);
+    @include headerTransformStart ;
+    
+    
+    h1 {
+        display: inline-block;
+        margin:1em 0 0 0;
+        @include headerTransformStart ;}
+    
+    nav{position:fixed;
+        width:100%;
+        text-align:center;
+        z-index:11;
+        top:0;
+        
+        
+        ul  {
+            list-style-type:none;
+            margin:0;
+            padding:0; }
+            
+        li  {display:inline-block;}
+        
+        a#nav-projects  {left:-16.5em;}
+        a#nav-details   {right:-14.5em;}
+        
+        a   {text-decoration:none;
+            line-height:3.5em;
+            color:$orange;
+            position:relative;
+            display:inline-block;
+            margin-top:1.8em;
+            @include headerTransformStart ;}
+        
+        } /* end of nav tag */
+    } /* End of header tag */
+
+
+
+
+
+
+/* The .smaller class is the transisitoned state */
+
+header.smaller {
+    background:#1abc9c;
+    height:3em;
+    border-left:1em solid $blueish;
+    border-right:1em solid $blueish;
+
+    h1 {
+      font-size: 1.5em;
+      color: #fff;
+      font-weight: normal;
+      margin: .37em 0 0 0;
+      text-shadow: 0 0 2em #666;
+    }
+
+    a {
+      line-height: 75px;
+      margin-top: -.8em;
+      color: #f1c40f;
+      text-shadow: 0 0 0 #fff;
+      left:12em;
+    }
+
+    a#nav-projects {
+      left:-13.5em;
+    }
+
+} /* header.smaller end */
+
+
+
+
+main    {position:relative;top:3em;min-height:80em;}
+
+
+section {padding:0 2em 1em; max-width:960px;margin:0 auto;}
+
+section h2 {font-weight: normal;
+text-align: center;
+margin: 0 auto 1em;
+font-size: 2em;
+color: $darkBlue;}
+
+
+
+
+
+
+
+
+#statement     {margin-top:2em;text-align:center;font-size:1.75em;color:$greenish;
+
+    h3  {margin:0;}
+    img {border-radius:50%;border:.5em solid #fff;}
+    
+    ul {display:inline;list-item-stye:none;padding:0;}
+    li {display:none;border:1px solid #ccc;}
+    li:first-child {display:inline;}
+
+} /* end #statement */
+
+
+
+
+
+
+/* details */
+aside     {min-height:10em;background:$tealish;color:#fff;
+
+    ul  {padding:0 10px 10px;margin:0 auto;text-align:center;}
+    li  {width: 120px;list-style-type: none;background: url('../images/icons/ad.svg') no-repeat top center;display: inline-block;padding: 100px 10px 5px 10px;vertical-align: top;margin: 0 10px;}
+
+} /* aside */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Projects section */
+
+#projects        {
+
+    padding-top:5em;
+    
+    ul     {padding:0;margin:0;list-style-type:none;}
+    
+    .portfolioListEntry     {background:#cbd0d3;border:0.25em solid #fff;display:inline-block;width:33%;margin:0;height:13em;overflow:hidden;}
+    
+    .portfolioListEntry figure {margin:0;height:13em;position:relative;}
+
+
+
+
+/* Individual project caption text */
+
+.portfolioListEntry figcaption {
+    z-index:1;
+    background:#2980B9;
+    padding:1em;
+    bottom:-10em;
+    position:absolute;
+    width:100%;
+    min-height:10em;color:#fff;
+    
+    transform: translateZ(0);
+    transform: translate3d(0, 0, 0);
+      -webkit-transition: -webkit-transform 0.4s;
+      -moz-transition: -moz-transform 0.4s;
+      transition: transform 0.4s;
+      
+      }
+
+.portfolioListEntry figure:hover figcaption {
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+    transform: translateY(-5em);
+    -webkit-transition: -webkit-transform 0.4s;
+    -moz-transition: -moz-transform 0.4s;
+    transition: transform 0.2s;}
+
+.portfolioListEntry img    {
+    width:100%;max-width:100%;opacity:0.8;
+    transform: translateZ(0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform 0.4s;
+    -moz-transition: -moz-transform 0.4s;
+    transition: transform 0.4s;}
+
+.portfolioListEntry figure:hover img {
+    opacity: 1;
+      -webkit-transform: translateY(-50px);
+      -moz-transform: translateY(-50px);
+      -ms-transform: translateY(-50px);
+      transform: translateY(-50px);
+      -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+      -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+      transition: transform 0.4s, opacity 0.1s;}
+    
+    }  // End Projects
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+/* 321px 20.063em phone portrait for larger phones - when would I use this? */
+@media only screen and (min-width: 20.063em) { 
+ 
+}
+/* 481px 30.063em - Phone landscape */
+@media only screen and (min-width: 30.063em) { 
+ 
+}
+/* 530px 33.125em - small tablet portrait/Kindle */    
+@media only screen and (min-width: 33.125em) { 
+    
+}
+/* 768px 48.000em - ipad portrait and small tablet landscape */
+@media only screen and (min-width: 48.000em) { 
+    
+}
+/* 1025px 64.063em - One pixel higher than ipad landscape so for laptops and small screens and nexus 10 landscape */
+@media only screen and (min-width: 64.063em) {
+ 
+}
+/* 1281px 80.063em - one pixel higher than my normal width, so for wide desktops only */    
+@media only screen and (min-width: 80.063em) {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
