@@ -1,0 +1,534 @@
+@import url(http://fonts.googleapis.com/css?family=Dosis|Oregano);
+@font-face {
+    font-family: 'Entypo';
+    src: url('fonts/entypo-social.eot?#iefix') format('embedded-opentype'), 
+	     url('fonts/fonts/entypo-social.woff') format('woff'), 
+	     url('fonts/fonts/entypo-social.ttf')  format('truetype'),
+	     url('fonts/fonts/entypo-social.svg#Entypo') format('svg');
+	}
+
+/*! normalize.css v1.1.0 | MIT License | git.io/normalize */
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block;*display:inline;*zoom:1}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html,button,input,select,textarea{font-family:sans-serif}body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}h2{font-size:1.5em;margin:.83em 0}h3{font-size:1.17em;margin:1em 0}h4{font-size:1em;margin:1.33em 0}h5{font-size:.83em;margin:1.67em 0}h6{font-size:.67em;margin:2.33em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}blockquote{margin:1em 40px}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}p,pre{margin:1em 0}code,kbd,pre,samp{font-family:monospace,serif;_font-family:'courier new',monospace;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:none}q:before,q:after{content:'';content:none}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}dl,menu,ol,ul{margin:1em 0}dd{margin:0 0 0 40px}menu,ol,ul{padding:0 0 0 40px}nav ul,nav ol{list-style:none;list-style-image:none}img{border:0;-ms-interpolation-mode:bicubic}svg:not(:root){overflow:hidden}figure{margin:0}form{margin:0}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0;white-space:normal;*margin-left:-7px}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle}button,input{line-height:normal}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;*overflow:visible}button[disabled],html input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;*height:13px;*width:13px}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    background:#ebebeb;
+    font: 16px/26px font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+
+
+
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {    padding: 30px 0;}
+
+
+
+
+
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+
+
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+div.wrapper {width:100%;padding:0;}
+
+
+
+.navbutton{	display:none;
+			float: right;
+			font-size: .45em;
+			color: #fff;
+			font-family: 'dosis';
+			text-decoration: none;
+			background: #572d1f;
+			line-height: 1em;
+			padding: .2em .4em;
+			margin: .2em;
+			text-transform: uppercase;
+			border-radius: .2em;
+			text-shadow: 0 0 10px white;}
+
+ .navbutton:hover{text-decoration:underline;}
+
+
+	header .navbutton{margin:1.4em 0 0 0;font-size:1.4em;}
+
+
+
+
+
+
+
+
+
+
+
+
+/* header */
+
+
+
+.header-container{z-index: 5;position: absolute;top: 0;left: 0;width: 100%; 
+		-webkit-box-shadow: 0 1px 5px #444;
+           -moz-box-shadow: 0 1px 5px #444;
+                box-shadow: 0 1px 5px #444}
+                
+
+
+	header h1 {line-height:1em;text-align:center;font-family: 'Oregano', cursive;color:#572d1f;font-size: 3em;margin: .25em 0 .2em 0;text-shadow: 0 0 10px white;}
+	header h2 {font-family:'Dosis', sans-serif;font-weight: normal;color: #572D1F;font-size: 1.5em;margin-top:0;text-align:center;}
+
+
+
+
+
+/* Fixed header */
+
+.fixed-header {top:0px;padding:0 12%;text-align:left;font-family: 'Oregano', cursive;color:#572d1f;font-size: 3em;margin:0 auto;text-shadow: 0 0 10px white;width:76%;position:Fixed;z-index:4;
+		-webkit-box-shadow: 0 1px 5px #444;
+           -moz-box-shadow: 0 1px 5px #444;
+                box-shadow: 0 1px 5px #444}
+
+	.fixed-header h3 	{font-size: 0.6em;line-height: 0em;margin: .7em 0;letter-spacing:0.1em;}
+
+
+/* wrap */
+
+main    {margin-top:80px;}
+
+main h4 {text-align: center;
+font-family: dosis;
+text-transform: uppercase;
+letter-spacing: 2em;
+margin: 1.25em 0 0em;
+font-size: 1.5em;
+color: #555;
+background: #444;
+text-shadow: 0px 0px 19px #000;
+padding: .24em 0;}
+
+section {background:#efefef;overflow:hidden;border-top:1px solid #fff;border-bottom:1px solid #ccc;padding:1.5em;position:relative;}
+
+
+
+
+
+
+
+/* title */
+section h3              {font-family: 'Dosis', sans-serif;font-size: 2.5em;text-transform:uppercase;margin: 0 0 .5em 0;}
+
+
+
+
+/* Roles */
+
+
+dl.role dt       {font-family: 'Dosis', sans-serif;display:inline-block;margin: 0 0 .5em;font-size: 1.25em;color:#B33A22;text-shadow: 0px 1px 0px #444;}
+dl.role dd       {font-family: 'Oregano', cursive;margin:0 .1em 0;font-size:1.3em;font-style: normal;}
+
+/* Tools */
+dl.tools dt      {font-family: 'Dosis', sans-serif;display:inline-block;margin: 0 0 .5em;font-size: 1.25em;color:#B33A22;text-shadow: 0px 1px 0px #444;}
+dl.tools dd      {font-family: 'Oregano', cursive;margin:0 .1em 0;font-size:1.3em;font-style: normal;}
+
+
+
+
+
+/* Text */
+section p               {font-family: 'Dosis', sans-serif;font-size: 1.25em;margin: 0 0 1.5em 0;}
+
+/* call to action */
+section a.calltoaction  {font-family: 'Dosis', sans-serif;text-shadow:0px 0px 2px #444;background-color: #3FBD20;color: white;text-decoration: none;border-radius: 5px;padding: .35em 1em;font-weight: bold;font-size: 1.25em;}
+section a:hover.calltoaction {text-decoration:underline;opacity:0.9;}
+ 
+
+/* image */
+
+figure {overflow:hidden;height:14em;border:1px solid #fff;box-shadow:0 0 10px #444;background:#000;}
+figure img {width:100%;max-width:100%;}
+
+figure a img:hover {opacity:0.2}
+
+figure a figcaption{display:none;}
+figure a:hover figcaption{display:block;font-family: 'Oregano', cursive;text-align: center;color: white;text-decoration: none;position: absolute;top: 50%;padding-left: 4em;font-size:1.1em;}
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+/*
+#about  {font-family: 'Oregdano', cursive;color:#572d1f;font-size: 3em;margin: .25em 0 .2em 0;text-shadow: 0 0 10px white;}
+*/
+
+#about {font-family: 'dosis';
+color: #fff;
+font-size: 2em;
+padding: .5em 1em;
+width: auto;}
+
+#about a {color:#fff;}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+
+@media only screen and (min-width: 320px) {
+header h2{padding:0 20px;line-height:1.2em}
+}
+
+@media only screen and (min-width: 330px) {
+
+}
+
+@media only screen and (min-width: 500px) {
+
+dl.role dd 		{text-shadow: 0px 1px 0px #444;color: white;background: #E09455;padding: 0px 6px;border-radius: 5px;display: inline-block;box-shadow: 0px 0px 4px white;}
+dl.tools dd  	{text-shadow: 0px 1px 0px #444;color: white;background: #db7739;padding: 0px 6px;border-radius: 5px;display: inline-block;box-shadow: 0px 0px 4px white;}
+
+
+
+
+
+
+/* About picture hover */
+
+.patrickdoranimage {border-radius: 90px;
+background: #fff url('https://aftervictory.com/media/me.jpg') no-repeat center center;
+border: 10px solid #fff;
+width: 159px;
+height: 159px;
+box-shadow: 0px 0px 10px #444;
+
+}
+
+#patrickdoranimage {display:none;z-index: 6;
+position: fixed;
+right: 3em;
+top: 70px;}
+
+
+
+
+
+
+
+
+
+
+}
+
+
+@media only screen and (min-width: 750px) {
+	header h1{text-align:left;float:left;}
+header h2{text-align: left;
+float: left;
+margin-top: 1.25em;
+font-family: 'Oregano', cursive;
+padding: 0;
+margin-left: .7em;
+position: relative;
+top: 2px;
+border-left: 1px dotted #572D1f;
+padding-left: .5em;}
+}
+
+
+
+@media only screen and (min-width: 768px) {
+header {padding:0.1em 6em;}
+
+
+main    {top:80px;}
+
+
+
+
+section {padding: 2em 1em;}
+section.left figure     {float:left;margin-right:3em;}
+
+section.right figure    {float:right;margin-left:3em;}
+
+
+
+
+figure {overflow:hidden;height:25em;width:30em;border:1px solid #fff;box-shadow:0 0 10px #444;background:#fff;}
+
+
+
+}
+
+
+
+
+@media only screen and (min-width: 1023px) {
+.navbutton {display:block;}
+}
+
+	
+
+
+
+@media only screen and (min-width: 1140px) {
+    section {padding:3em 8em 2em;}
+
+
+
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
