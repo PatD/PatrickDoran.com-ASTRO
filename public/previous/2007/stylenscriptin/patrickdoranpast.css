@@ -1,0 +1,5 @@
+#pastprojectbox{padding:7px;margin:7px 7px 25px;background:#F4EDDF url(../pixels/pastwork_icon.gif) no-repeat right 5px;border:2px solid #CEAF71;overflow:auto;}
+#pastprojectbox span{padding-left:235px;display:block;}#pastprojectbox img{margin:10px;padding:3px;float:left;clear:both;border:1px dotted #C7A678;}
+#pastprojectbox h4{text-align:left;font-size:15px;color:#685040;margin:8px 3px 8px 0px;padding:0px;display:block !important;border-bottom:2px solid #E1CFAA;}
+#pastprojectbox a{text-decoration:none;text-align:left !important;color:#822826;font-size:13px;padding:0px;margin:0px;display:block !important;font-weight: bold;}#pastprojectbox a:hover{color:#333;}#pastprojectbox a em{padding-left:10px;color:#F4EDDF;text-decoration:none !important;font-weight:normal;}#pastprojectbox a:hover em{color:#666;}
+#pastprojectbox p{text-align:left;font-size:13px;display:block;}#pastprojectbox p a{font-size:13px;font-weight:normal;text-decoration:underline;color:#822826;display:inline !important;}

@@ -1,0 +1,138 @@
+body{margin:0;padding:0;color:#655F56;background:#D9CFB1 url(../pixelography/background_D9CFB1.jpg) repeat-x fixed 0px 0px;font-size:1em;font-family:"Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;line-height:1.2em;font-weight:normal;}
+#content{width:850px;margin:0px auto 0px;padding:0px;background:#EFEBDF url(../pixelography/bluesubeheader.gif) repeat-x center 83px;}
+#deezrecentworks{border-left:2px solid #B95E52;border-right:2px solid #B95E52;overflow:auto;height:100%;margin:0px;padding:50px 0px 0px;}
+#actualrecentwork{float:left;padding-left:25px;margin:0px;padding-right:25px;border-right:2px dotted #D9CFB1;}
+h1{margin:0;padding:0;background:#655F56 url(../pixelography/h1_patrickdoranpageheader.jpg) no-repeat 6px;height:84px;}
+h2.newh2{margin:0px;padding:0px;display:block;background: url(../pixelography/h2_newworks.gif) no-repeat left;height:48px;width:245px;}
+h2.pasth2{margin-top:35px;padding:0px;display:block;background: url(../pixelography/h2_pastworks.gif) no-repeat left;height:48px;width:245px;}
+h2.abouth2{margin-top:0px;margin-bottom:9px;padding:0px;display:block;background: url(../pixelography/aboutbox_header.gif) no-repeat left;height:48px;width:245px;}
+#actualrecentwork img{border:0px;margin:0px;}
+#actualrecentwork h3, hr, h2 span, h1 span{display:none;}
+
+/** New project boxes **/
+div.threeprojectsbox{width:420px;padding:20px 0px 0px 20px;background:#F7F6F7;border:2px solid #D9CFB1;margin:10px 0px;}
+div.newworksquarepreviewholder{float:left;padding:0px;margin:0px;}
+div.newprojtitle{display:block;float:left;}
+a.newworksquarepreviews{border:0px;display:block;width:130px;height:120px;background-color:#E0E3E2;text-decoration:none;padding:15px 0px 0px 15px;margin:0px 10px 10px 0px;}
+a.newworksquarepreviews:hover{border:0px;display:block;width:130px;height:120px;background-color:#B95E52;text-decoration:none;padding:15px 0px 0px 15px;margin:0px 10px 10px 0px;}
+a.moreinfo{margin-left:0px;margin-top:3px;text-align:left;display:block;font-weight:bolder;color:#899796;}
+a.moreinfo:hover{text-decoration:none;color:#B95E52;background:#fff;}
+#moreinfoproj1, #moreinfoproj2, #moreinfoproj3 {width:380px;text-align:center;margin:2px auto 10px;height: 0;overflow: hidden;}
+.innerprojinfo{border:2px solid #B95E52;padding:10px;background:#F6F5F6 url(../pixelography/subpreview_gradientback.jpg) repeat-x 0px 0px;margin-bottom:12px;}
+.innerprojinfo p{font-size:small;padding:0px;color:#655F56;text-align:left;margin:0px;}
+.innerprojinfo strong{font-weight:bold;color:#B95E52;border-bottom:1px dotted #655F56;font-size:medium;padding:0px;margin-bottom:10px;}
+.innerprojinfo a{font-size:medium;font-weight:bold;color:#899796;}
+.innerprojinfo a:hover{text-decoration:none;color:#B95E52;text-decoration:underline;}
+.innerprojinfo img{float:right;padding-left:10px;}
+/** End New Project boxes **/
+
+/** past project boxes **/
+.pastprojectbox{width:440px;padding:0px;background:#F7F6F7;margin:10px 0px 25px;border:2px solid #D9CFB1;}
+.pastprojectbox ul{padding-left:20px;padding-right:20px;margin-top:20px;margin-left:0px;margin-right:0px;}
+li.pastlists{padding-bottom:4px;list-style:none;margin:0px 0px 15px;}
+li.pastlists a p{font-size:13px;color:#655F56;margin:0px !important;line-height: 17px;padding: 2px 5px 0px 94px;}
+li.pastlists a:hover p{color:#333;}
+li.pastlists a img{float:left;}
+li.pastlists a{width:100%;height:100%;display:block;text-decoration:none;margin:0px;padding:0px;border-bottom:2px solid #D9CFB1}
+li.pastlists a:hover{background:#E0E3E2;text-decoration:none;border-bottom:2px solid #B95E52;}
+li.pastlists a strong{font-size:15px;color:#B95E52;margin-top:10px;}
+li.pastlists a:hover strong{color:#333;text-decoration:none}
+li.pastlists a em{color:#F7F6F7;display:inline;font-size:11px !important;line-height:29px;}
+li.pastlists a:hover em{color:#B95E52;font-style:normal;text-decoration:underline !important;padding-bottom:25px;}
+li.pastlists a img{border:0px;width:62px;height:56px;background-color:#E0E3E2;text-decoration:none;padding:10px;margin:0px;}
+li.pastlists a:hover img{background-color:#B95E52;}
+/** end past boxes **/
+
+/** Footer is for Feet **/
+#smellyfeet{border:2px solid #655F56;background:#899796;width:821px;padding:5px 5px 5px 20px;margin:0px auto;font-size:11px;color:#ECE0B3;}
+#smellyfeet a{color:#E0E3E2;text-align:left !important;text-decoration:underline;}
+#smellyfeet a:hover{color:#F7F6F7;text-decoration:none;}
+#smellyfeet a strong{font-weight:normal !important;color:#899796 !important;text-decoration:underline !important;}
+#smellyfeet a:hover strong{color:#F7F6F7 !important;text-decoration:none !important;}
+
+/** Sidebar area **/
+#sidebar{float:left;padding-left:16px;width:310px;font-size:10px;}
+#sidebar span{display:none;}
+
+
+/**aboutbox**/
+#aboutbox p{border-bottom:1px dotted #D9CFB1;color:#655F56;font-size:13px;line-height:18px;padding-bottom:8px;padding-top:8px;margin:0px;}
+#aboutbox strong{color:#899796;}
+#aboutbox h3{color:#666;font-size:17px;text-align:center;margin-top:40px;margin-bottom:0px;padding:3px;border-bottom:1px solid #D9CFB1;}
+#aboutbox a{color:#B95E52;}
+#aboutbox a:hover{color:#655F56;text-decoration:none;}
+#aboutbox ul{padding:0;list-style: none;margin: 0px 0px 20px;}
+#aboutbox ul.halflist{width:150px;float:left;}
+#aboutbox li{font-size:12px;text-align:left;line-height:14px;margin-left:8px;padding-top:6px;padding-bottom:6px;padding-left:15px;border-bottom:1px dotted #D9CFB1;}
+#aboutbox li.alt{background:#F7F6F7;}
+#aboutbox li.noborder{border-bottom:none !important;}
+a.icons{float:left;padding-top:42px;padding-bottom:0px;margin:15px;;display:inline;width:125px;text-align:center;font-size:11px;}
+a.pdficon{background: url(../pixelography/pdf_icon.gif) no-repeat center 3px;}
+a.wordicon{background: url(../pixelography/word_icon.gif) no-repeat center 3px;}
+a:hover.pdficon{background:#fff url(../pixelography/pdf_icon.gif) no-repeat center 3px;}
+a:hover.wordicon{background:#fff url(../pixelography/word_icon.gif) no-repeat center 3px;}
+
+/** Lightbox CSS **/
+
+#lightbox{
+display:none;
+position:absolute;
+top:50%;
+left:50%;
+z-index:9999;
+width:500px;
+margin:-220px 0 0 -250px;
+background:#fff;
+text-align:left;
+border:5px solid #333;
+padding:20px;}
+
+
+
+#lightbox a img{float:right;border:10px solid black !important;margin-left:10px;margin-right:0px;margin-top:20px;}
+#lightbox a:hover img{border:10px solid #B95E52 !important;}
+#lightbox p{color:#655F56;font-size:13px;}
+#lightbox p a{color:#B95E52;}
+#lightbox p a:hover{color:#899796;}
+
+
+
+
+a.projectsclose{font-size:10px;color:#B95E52;float:right;margin-right:10px;text-decoration:none !important;}
+a:hover.projectsclose{color:#899796;text-decoration:none !important;}
+a.projectsclose em{color:#fff !important;text-decoration:none !important;font-style:normal !important;}
+a:hover.projectsclose em{border-bottom:1px dashed #B95E52; color:#899796 !important;;text-decoration:none !important;}
+h4.projectsclient{font-size:16px;font-weight:bold;color:#ccc;margin:0px;}
+h4.projectsclient strong{position:absolute;left:100px;color:#899796 !important;}
+h4.projectsclient em{position:absolute;left:100px;color:#899796;font-style:normal;font-weight:bold;}
+h5.projectsmyrole{font-size:16px;color:#999;margin:0px;border-bottom:1px dashed #899796;padding-bottom:10px;}
+h5.projectsmyrole em{position:absolute;left:100px;color:#655F56;font-style: normal;}
+a.projectslink{margin-left:10px;font-weight:bold;color:#B95E52;display:block;text-decoration:none !important;padding-bottom:5px;}
+a:hover.projectslink{background:#EFEBDF;color:#899796;text-decoration:none !important;padding-bottom:5px;}
+a.projectslink em{color:#fff !important;text-decoration:none !important;font-style:normal !important;}
+a:hover.projectslink em{color:#655F56 !important;;text-decoration:underline !important;}
+
+
+
+
+
+
+#lightbox[id]{position:fixed;}
+#overlay{
+display:none;
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:5000;
+background-color:#333;
+-moz-opacity: 0.9;
+opacity:.90;
+filter: alpha(opacity=90);
+}
+#overlay[id]{position:fixed;}
+#lightbox.done #lbLoadMessage{display:none;}
+#lightbox.done #lbContent{display:block;}
+#lightbox.loading #lbContent{display:none;}
+#lightbox.loading #lbLoadMessage{display:block;}
