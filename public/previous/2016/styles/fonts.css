@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'porter_sans_blockblock';
+    src: url('../fonts/porter-sans-inline-block-webfont.eot');
+    src: url('../fonts/porter-sans-inline-block-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/porter-sans-inline-block-webfont.woff') format('woff'),
+         url('../fonts/porter-sans-inline-block-webfont.ttf') format('truetype'),
+         url('../fonts/porter-sans-inline-block-webfont.svg#porter_sans_blockblock') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*
+@font-face {
+    font-family: 'amblelight_condensed';
+    src: url('../fonts/Amble-LightCondensed-webfont.eot');
+    src: url('../fonts/Amble-LightCondensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Amble-LightCondensed-webfont.woff') format('woff'),
+         url('../fonts/Amble-LightCondensed-webfont.ttf') format('truetype'),
+         url('../fonts/Amble-LightCondensed-webfont.svg#amblelight_condensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}   

@@ -1,0 +1,12 @@
+<h3>Case Studies &amp; Projects</h3>
+<ul>
+    <li class="portfolioListEntry" ng-repeat="item in portfolioVariable">
+      <a href="#/portfolio/{{portfolioVariable.indexOf(item)}}#PatrickDoran">
+        <figure id="portfolio_{{portfolioVariable.indexOf(item)}}">
+            <img ng-src="https://aftervictory.com/media/{{item.Image}}" alt="{{AltText}}">
+            <figcaption>{{item.Name}}</figcaption>
+        </figure>
+      </a>
+    </li>
+</ul>
+<small>There are <mark>{{portfolioVariable.length}}</mark> projects here.</small>

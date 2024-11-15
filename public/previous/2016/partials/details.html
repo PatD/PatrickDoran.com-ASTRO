@@ -1,0 +1,48 @@
+<style>
+    header {color:#ccc;}
+    header nav ul li a {visibility:hidden;}
+    #statement,
+    body #jumpoffs {display:none;}
+</style>
+<article id="portfolioDetail" ng-model="portfolioVariable">
+    <h2>{{portfolioVariable[whichPortfolioEntry].Name}}</h2>
+    <h6>{{portfolioVariable[whichPortfolioEntry].Wit}}</h6>
+
+    <a class="paginatePortfolio hoverButton previous" href="#/portfolio/{{prevEntry}}#PatrickDoran">Previous</a>
+    <a class="paginatePortfolio hoverButton next" href="#/portfolio/{{nextEntry}}#PatrickDoran">Next</a>
+    
+   
+        <figure>
+            <img class="mainimage" alt="{{portfolioVariable[whichPortfolioEntry].AltText}}" ng-src="https://aftervictory.com/media/{{portfolioVariable[whichPortfolioEntry].Highres}}">
+        </figure>
+
+    <div>    
+        <h3>Project Details</h3>
+        <p>{{portfolioVariable[whichPortfolioEntry].Description}}</p>
+
+        <a class="hoverButton calltoaction" target="_blank" href="{{portfolioVariable[whichPortfolioEntry].Link}}">{{portfolioVariable[whichPortfolioEntry].ViewText}}</a>
+
+
+        <h3>Tools Used</h3>
+            <ul class="tools" ng-bind-html="portfolioVariable[whichPortfolioEntry].Tools">
+            {{portfolioVariable[whichPortfolioEntry].Tools}}
+            </ul>
+
+        <h3>My Role</h3>
+            <ul class="role" ng-bind-html="portfolioVariable[whichPortfolioEntry].Role">
+            {{portfolioVariable[whichPortfolioEntry].Role}}
+            </ul>
+    </div>
+    
+    <!-- If there's a mobile image, load it here. Otherwise, hide -->
+    <span data-containsmobile="{{portfolioVariable[whichPortfolioEntry].Mobile}}">
+        <div class="mobileWrapper">
+            <figure class="mobilefigure">
+                <img class="mobile" alt="Mobile {{portfolioVariable[whichPortfolioEntry].AltText}}" ng-src="https://aftervictory.com/media/{{portfolioVariable[whichPortfolioEntry].Mobile}}">
+            </figure>
+        </div>
+        <div>
+            <h3>Mobile view</h3>
+        </div>
+     </span>  
+</article>

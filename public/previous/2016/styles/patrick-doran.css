@@ -1,0 +1,723 @@
+@font-face {
+    font-family: 'porter_sans_blockblock';
+    src: url('../fonts/porter-sans-inline-block-webfont.eot');
+    src: url('../fonts/porter-sans-inline-block-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/porter-sans-inline-block-webfont.woff') format('woff'),
+         url('../fonts/porter-sans-inline-block-webfont.ttf') format('truetype'),
+         url('../fonts/porter-sans-inline-block-webfont.svg#porter_sans_blockblock') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'amblelight_condensed';
+    src: url('../fonts/Amble-LightCondensed-webfont.eot');
+    src: url('../fonts/Amble-LightCondensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Amble-LightCondensed-webfont.woff') format('woff'),
+         url('../fonts/Amble-LightCondensed-webfont.ttf') format('truetype'),
+         url('../fonts/Amble-LightCondensed-webfont.svg#amblelight_condensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {font-family:'amblelight_condensed';}
+
+h1, h2, nav a {font-family:'porter_sans_blockblock';}
+
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {resize: vertical;}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+body    {padding:1em 0em;margin:0;box-shadow: inset 0 0 0 1em #f1c40f;min-height:1000px;}
+
+header {  text-rendering: optimizeLegibility;
+    width: 100%;
+    text-align:center;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    color:#3d566e;
+    transform: translateZ(0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;}
+
+
+h1 {display: inline-block;
+      margin:1em 0 0 0;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      transition: all 0.3s;}
+
+
+
+
+
+nav     {position:fixed;width:100%;text-align:center;z-index:11;top:0;}
+  nav ul  {list-style-type:none;margin:0;padding:0;display:inline-block;}
+  nav li  {display:inline-block;}
+  nav a#nav-projects  {left:-16.5em;}
+  nav a#nav-details   {right:-14.5em;}
+  nav a   {text-decoration:none;line-height:3.5em;color:#d35400;position:relative;display:inline-block;margin-top:1.8em;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          -ms-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          transition: all 0.3s;}
+
+
+/* The .smaller class is the transisitoned state */
+
+header.smaller {
+    background:#1abc9c;
+    height:3em;
+    border-left:1em solid #2980B9;
+    border-right:1em solid #2980B9;
+}
+
+
+
+header.smaller h1 {
+  font-size: 1.5em;
+  color: #fff;
+  font-weight: normal;
+  margin: .37em 0 0 0;
+  text-shadow: 0 0 2em #666;
+}
+
+header.smaller nav a {
+  line-height: 75px;
+  margin-top: -.8em;
+  color: #f1c40f;
+  text-shadow: 0 0 0 #fff;
+  left:12em;
+}
+
+header.smaller nav a#nav-projects {
+  left:-13.5em;
+}
+
+
+
+
+
+
+main    {position:relative;top:3em;min-height:80em;}
+
+
+section {padding:0 2em 1em; max-width:960px;margin:0 auto;}
+
+section h2 {font-weight: normal;
+text-align: center;
+margin: 0 auto 1em;
+font-size: 2em;
+color: #3d566e;}
+
+
+
+/* Header areas */
+
+#America            {position:relative;}
+#America #flag      {opacity:0;display:none;width:100px;height:100px;background:url('../images/america.svg');background-size:cover;}
+#America:hover #flag{opacity:1;display:block;top: -100px;position: absolute;right: 12px;}
+
+#statement     {margin-top:2em;text-align:center;font-size:1.75em;color:#7f8c8d;}
+#statement h3  {margin:0;}
+#statement img {border-radius:50%;border:.5em solid #fff;}
+
+#statement ul {display:inline;list-item-stye:none;padding:0;}
+#statement li {display:none;border:1px solid #ccc;}
+#statement li:first-child {display:inline;}
+
+
+
+/* details */
+aside     {min-height:10em;background:#1abc9c;color:#fff;}
+aside h4  {}
+aside ul  {padding:0 10px 10px;margin:0 auto;text-align:center;}
+aside li  {width: 120px;list-style-type: none;background: url('../images/icons/ad.svg') no-repeat top center;display: inline-block;padding: 100px 10px 5px 10px;vertical-align: top;margin: 0 10px;}
+
+
+
+
+
+
+
+/* Projects section */
+
+/* This extra padding is for the on-page-link */
+#projects        {padding-top:5em;}
+
+
+/* Project Listing */
+    #projects ul     {padding:0;margin:0;list-style-type:none;}
+    #projects li.portfolioListEntry     {background:#cbd0d3;border:0.25em solid #fff;display:inline-block;width:33%;margin:0;height:13em;overflow:hidden;}
+
+    .portfolioListEntry figure {
+        margin:0;height:13em;position:relative;
+    }
+
+
+  /* Individual project caption text */
+    .portfolioListEntry figcaption {
+        z-index:1;
+        background:#2980B9;
+        padding:1em;
+        bottom:-10em;
+        position:absolute;
+        width:100%;
+        min-height:10em;color:#fff;
+        
+        transform: translateZ(0);
+        transform: translate3d(0, 0, 0);
+          -webkit-transition: -webkit-transform 0.4s;
+          -moz-transition: -moz-transform 0.4s;
+          transition: transform 0.4s;}
+
+    .portfolioListEntry figure:hover figcaption {
+        -webkit-transform: translateY(-50px);
+        -moz-transform: translateY(-50px);
+        -ms-transform: translateY(-50px);
+        transform: translateY(-5em);
+        -webkit-transition: -webkit-transform 0.4s;
+        -moz-transition: -moz-transform 0.4s;
+        transition: transform 0.2s;}
+
+    .portfolioListEntry img    {
+        width:100%;max-width:100%;opacity:0.8;
+        transform: translateZ(0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transition: -webkit-transform 0.4s;
+        -moz-transition: -moz-transform 0.4s;
+        transition: transform 0.4s;}
+
+    .portfolioListEntry figure:hover img {
+        opacity: 1;
+      	-webkit-transform: translateY(-50px);
+      	-moz-transform: translateY(-50px);
+      	-ms-transform: translateY(-50px);
+      	transform: translateY(-50px);
+      	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+      	-moz-transition: -moz-transform 0.4s, opacity 0.1s;
+      	transition: transform 0.4s, opacity 0.1s;}
+
+
+
+
+
+
+
+/* SVG backgrounds */
+
+/*
+
+.portfolioDetail .mobile  {outline:1px solid #000; background:url('../images/iphone2.svg') no-repeat top center;width:300px;height:500px;background-size:contain;}
+
+.portfolioDetail .tablet  {background:url();width:500px;height:800px;background-size:500px 800px;}
+
+.portfolioDetail .laptop  {background:url();width:900px;height:500px;background-size:900px 500px;}
+
+
+*/
+
+
+#portfolioDetail header     {min-height: 6em;
+                             width: inherit;
+                             position: inherit;
+                             top: inherit;
+                             z-index: inherit;
+                             transform: inherit;
+                             transition: none;
+                             color: inherit;
+                             overflow: visible;}
+
+#portfolioDetail h2         {margin:0 auto 0.5em;}
+#portfolioDetail h6        {color:#7f8c8d;margin:0 auto 1em;}
+                             
+                             
+#portfolioDetail div        {position: relative;}
+
+
+#portfolioDetail figure     {border:.5em solid #3d566e;right:0;top:0;position: absolute;max-width: 65%;min-width:65%;min-height:25em;}
+#portfolioDetail .mainimage {width:100%}
+
+#portfolioDetail .calltoaction{box-shadow:.00em .1em .1em #444;width:25%;background:#1abc9c;padding:.5em;display:block;text-align: center;font-family:'porter_sans_blockblock';color:#fff;text-decoration:none;font-size:.75em;line-height:.85em;}
+
+#portfolioDetail p,
+#portfolioDetail ul,
+#portfolioDetail h3{width:27%}
+#portfolioDetail ul{margin:.25em 0 0 .5em;}
+
+#portfolioDetail h3 {margin:4em 0 0 0}
+
+/* Pagination of projects */
+#portfolioDetail .paginatePortfolio      {box-shadow:0px 1px 1px #222;font-weight:bold;text-decoration:none;background:#e74c3c;color:#fff;position:fixed;top:10em;display:block;width:7em;font-height:1em;line-height:1em;}
+    
+#portfolioDetail .previous  {left:0;text-align:right;padding:1em 2em 1em 1em;}
+#portfolioDetail .next      {right:0;text-align:left;padding:1em 1em 1em 2em;}
+
+
+
+
+footer  {color:#cbd0d3;background:#3d566e;padding:2em;margin:5em 0 -1em 0;min-height:50em;}
+
+footer ul { padding:0;}
+footer li {display:inline-block;list-style-type:none;margin:0.25em;}
+footer li img {width:3em;height:3em;}
+
+
+
+/* Footer Icon Shadow Hover */
+/* Taken from https://github.com/IanLunn/Hover */
+    footer li a {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+    }
+    footer li a:before {
+      pointer-events: none;
+      position: absolute;
+      z-index: -1;
+      content: '';
+      top: 100%;
+      left: 5%;
+      height: 10px;
+      width: 90%;
+      opacity: 0;
+      background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+      background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform, opacity;
+      transition-property: transform, opacity;
+    }
+    footer li a:hover, footer li a:focus, footer li a:active {
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+    }
+    
+    footer li a:hover:before, footer li a:focus:before, footer li a:active:before {
+      opacity: 1;
+      -webkit-transform: translateY(5px);
+      transform: translateY(5px);
+    }
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ * http://juicystudio.com/article/screen-readers-display-none.php
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Flickity
+------------------------- */
+
+.flickity-enabled {
+  position: relative;
+}
+
+.flickity-enabled:focus { outline: none; }
+
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.flickity-viewport.is-pointer-down {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+}
+
+/* ---- previous/next buttons ---- */
+
+.flickity-prev-next-button {
+  position: absolute;
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  background: hsla(0, 0%, 100%, 0.75);
+  cursor: pointer;
+  /* vertically center */
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.flickity-prev-next-button.previous { left: 10px; }
+.flickity-prev-next-button.next { right: 10px; }
+
+.flickity-prev-next-button:disabled {
+  opacity: 0.3;
+  cursor: auto;
+}
+
+.flickity-prev-next-button svg {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%;
+}
+
+.flickity-prev-next-button .arrow {
+  fill: #333;
+}
+
+/* color & size if no SVG - IE8 and Android 2.3 */
+.flickity-prev-next-button.no-svg {
+  color: #333;
+  font-size: 26px;
+}
+
+/* ---- page dots ---- */
+
+.flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  bottom: -25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1;
+}
+
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background: #333;
+  border-radius: 50%;
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+.flickity-page-dots .dot.is-selected { opacity: 1; }
+
+
+
+
+
+
+/* ENd flickity */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
