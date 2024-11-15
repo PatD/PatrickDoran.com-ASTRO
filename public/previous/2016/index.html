@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en" ng-app="PatrickDoranPortfolioApp">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Patrick is a front end designer and developer working near Raleigh North Carolina.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patrick Doran is a UI Designer & Front End Web Designer</title>
+      
+  <meta name="author" content="Patrick Doran" />
+  <link href="https://aftervictory.com/media/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="shortcut icon" href="https://aftervictory.com/media/apple-touch-icon-sml.png" />
+  
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+  
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Patrick Doran">
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+
+  
+  <link rel="stylesheet" href="styles/patrick-doran-mobilefirst.css">
+
+  </head>
+
+  <body id="PatrickDoran">
+
+    <header>
+      <h1><a href="#PatrickDoran">Patrick Doran</a></h1>
+      <nav>
+        <ul>
+          <li><a id='nav-projects' target="_self" href="#projects">Work</a></li>
+          <li><a id='nav-details' target="_self" href="#info">Info</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <section id="statement">
+      <img height="159" src="https://aftervictory.com/media/me.jpg" alt="Photograph of Patrick Doran" />
+      <hr />
+      <h2>Patrick is an American <span>UI Designer</span> &amp; Front-End Developer working in Raleigh, North Carolina.</h2>
+      <h3>He's been designing and <span>building</span> things on screens for humans since 1998.</h3>
+      <h3>Patrick designs <em>mobile</em> interfaces, creates wireframes, and obsesses about <mark>performance.</mark></h3>
+      <h4>Lately, Patrick has spent a lot of time on <span>SharePoint</span> branding, design, and development.</h4>
+    </section>
+
+
+    <section id="jumpoffs">
+        <h3>Now Available on the Internet</h3>
+        <ul>
+            <li><a class="hint--bottom" data-hint="Send an Email" href="mailto:pdoran@gmail.com" target="_blank"><img src="images/footer/mail.svg" alt="Good ol Email" /></a></li>
+            <li><a class="hint--bottom" data-hint="GitHub" href="https://github.com/PatD" target="_blank"><img src="images/footer/github.svg" alt="GitHub" /></a></li>
+            <li><a class="hint--bottom" data-hint="LinkedIn" href="http://www.linkedin.com/in/patrickdoran/" target="_blank"><img src="images/footer/linkedin.svg" alt="On Linkedin" /></a></li>
+            <li><a class="hint--bottom" data-hint="Twitter/PatD" href="https://twitter.com/patd" target="_blank"><img src="images/footer/twitter.svg" alt="On Twitter" /></a></li>
+            <li><a class="hint--bottom" data-hint="SharePoint Twitter" href="https://twitter.com/ShareptInsanity" target="_blank"><img src="images/footer/twitter.svg" alt="SharePoint Insanity on Twitter" /></a></li>
+            <li><a class="hint--bottom" data-hint="Instagram" href="http://instagram.com/patd" target="_blank"><img src="images/footer/instagram.svg" alt="Instagram" /></a></li>
+            <li><a class="hint--bottom" data-hint="Last.FM" href="http://www.last.fm/user/pdoran" target="_blank"><img src="images/footer/lastfm.svg" alt="LastFM" /></a></li>
+        </ul>
+    </section>
+
+
+    <!--- Where the Angular.js Content is loaded -->
+    <main id="projects">
+      <section class="main">
+       <div data-ng-view=""></div>
+
+        <noscript>
+          <p>Hello! Looks like you don't have Javascript enabled. You'd be seeing stuff here if it was!</p>
+        </noscript>
+      </section>
+    </main>
+
+
+
+
+  <footer id="info">
+      <div id="details">
+      
+        <h5>About Patrick</h5>
+         <p>
+             <img src="https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-15/10611211_574010819365826_894212506_s.jpg" alt="Photo of Patrick Doran" />
+             <strong>I’m Patrick Doran, I'm a <span>front-end web developer and designer</span> living and working near Raleigh, North Carolina.</strong></p>
+             <p>Currently I'm, designing, planning, and building websites and mobile experiences for the <a href="http://ncdot.gov">North Carolina Department of Transportation</a>.</p>
+         <p>I've been pushing pixels and slinging standards compliant HTML for nearly 15 years. I belive in usability, simplificaiton of complex ideas, and that HTML is still <em>the way.</em></p>
+         <p>You should read my <a href="Patrick-Doran-Designer-Resume2015.pdf">Résumé</a></p>
+      
+      <br /> <!-- You mad <br>o? -->
+    
+      <aside> 
+        <h5>About this website</h3>
+        <p>This design is the <a href="https://web.archive.org/web/*/http://patrickdoran.com" target="_blank">5th</a> iteraiton of PatrickDoran.com. 
+        This mobile-first site was designed in the browser, built entirely on my <a href="http://google.com/chromebook" target="_blank">Chromebook</a>, using a great text editor called <a href="http://zedapp.org/" target="_blank">Zed</a>.</p>
+        <ul>
+            <li>I started writing its HTML5 using best practices from <a href="https://html5boilerplate.com/" target="_blank">HTML5 Boilerplate</a> and <a href="https://developers.google.com/web/starter-kit/" target="_blank">Google Web Starter Kit</a>.</li>
+            <li>The images are served from a <a href="https://aftervictory.com/media" target="_blank">different domain</a> to decrease page load time.</li>
+            <li>The colors used are inspired by <a href="http://flatuicolors.com/" target="_blank">FlatColors</a>.</li>
+            <li>The SVG icons come from <a href="http://customizr.net/icons/s" target="_blank">Customizr.net</a>.</li>
+            <li>Custom fonts <a href="http://www.fontsquirrel.com/fonts/porter-sans" target="_blank">Porter Sans</a> and <a href="http://www.fontsquirrel.com/fonts/amble" target="_blank">Amble</a> are loaded, but just for larger screen sizes.</li>
+        </ul>
+        <i>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" width="61" height="64"><metadata>image/svg+xml</metadata><title>Layer 1</title><g stroke="null" id="svg_1"><path stroke="null" id="svg_2" d="m30.3 0l-30.3 10.7 4.8 39.8 25.6 14.1 25.7-14.3 4.8-39.8 -30.5-10.5zM57.9 12.8 57.9 12.8 57.9 12.8" fill-rule="nonzero" fill="#b3b3b3"/><path stroke="null" id="svg_3" d="m57.9 12.8l-27.6-9.4 0 57.8 23.1-12.8 4.5-35.6z" fill-rule="nonzero" fill="#af2b2d"/><path stroke="null" id="svg_4" d="m3.4 13l4.1 35.6 22.8 12.6 0-57.8 -26.9 9.6 0 0 0 0z" fill-rule="nonzero" fill="#df2e31"/><path stroke="null" id="svg_5" d="m36.7 32.1l-6.3-13.2 -5.6 13.2 11.9 0zm2.4 5.6l-16.8 0 -3.8 9.4 -7 0.1 18.8-41.7 19.4 41.7 -6.5 0 -4.1-9.5z" fill-rule="nonzero" fill="#f2f2f2"/><path stroke="null" id="svg_6" d="m30.3 5.5l0.1 13.4 6.3 13.3 -6.4 0 0 5.6 8.8 0 4.1 9.5 6.7 0.1 -19.6-41.9z" fill-rule="nonzero" fill="#b3b3b3"/></g></svg>
+        </i>
+
+        <p>I used <a href="https://angularjs.org/" target="_blank">Angular.JS</a> to load portfolio data from JSON file, and its routing feature to create per-project views with unique URLs.
+        The reason was to learn how to use a client side MVC framework, and the project data seemed like a good source.
+        While it was a lot of fun to learn, I <em>don't</em> think Angular's the right choice for a portfolio site. The download tax for moblie is pretty high and the javascriptless suffer.</p>
+
+     </aside>
+      
+      
+    </div><!-- /details -->
+
+
+  </footer>
+
+
+
+   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
+   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular-route.min.js"></script>
+   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular-sanitize.min.js"></script>
+   <script src="js/patrickdoran.js"></script>
+   
+
+    <script>
+        (function(p,a,t,r,i,c,k){p['GoogleAnalyticsObject']=i;p[i]=p[i]||function(){
+        (p[i].q=p[i].q||[]).push(arguments)},p[i].l=1*new Date();c=a.createElement(t),
+        k=a.getElementsByTagName(t)[0];c.async=1;c.src=r;k.parentNode.insertBefore(c,k)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-21388707-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
