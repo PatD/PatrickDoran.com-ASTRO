@@ -1,5 +1,10 @@
 [
     {
+        "date": "1988",
+        "postId": 194,
+        "title": "Parents purchase a Commodore PC-20, a 10mhz PC-XT clone with 640k RAM. This is a canon event."
+    },
+    {
         "date": "1997",
         "postId": 194,
         "title": "Takes first Graphic Design classes. Learns Quark Express and Adobe design tools."
@@ -161,7 +166,17 @@
     },
     {
         "date": "2022",
-        "postId": 199,
+        "postId": 198,
         "title": "Learns Tableau dashboard platform, gets Tableau Desktop Certificate."
+    },
+    {
+        "date": "2023",
+        "postId": 200,
+        "title": "Learns Microsoft Power Automate and the Power Platform ecosystem."
+    },
+    {
+        "date": "2024",
+        "postId": 201,
+        "title": "Builds up leadership skills by becoming a Certified Public Manager® (CPM)."  
     }
 ]
